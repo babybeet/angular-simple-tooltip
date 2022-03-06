@@ -1,0 +1,8 @@
+<div class='kun-tooltip {{placement}} {{_isActive ? "enter": "leave"}}'
+     (animationend)='_onLeave()'>
+     <div class='kun-tooltip__arrow'></div>
+     <div class='kun-tooltip__content'
+          [id]='_idForAriaDescribedBy'
+          [innerHTML]='content'>
+     </div>
+</div>

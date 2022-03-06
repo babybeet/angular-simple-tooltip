@@ -1,0 +1,22 @@
+{
+    "name": "angular-simple-tooltip",
+    "version": "1.0.0",
+    "description": "This package provides an Angular attribute directive and a service for showing tooltips declaratively or programmatically",
+    "author": "Nhuy Van",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nhuyvan/angular-simple-tooltip.git"
+    },
+    "keywords": [
+        "tooltip",
+        "angular tooltip"
+    ],
+    "peerDependencies": {
+        "@angular/common": "^12.2.0",
+        "@angular/core": "^12.2.0"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    }
+}
