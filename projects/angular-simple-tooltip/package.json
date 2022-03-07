@@ -1,6 +1,6 @@
 {
     "name": "angular-simple-tooltip",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "This package provides an Angular attribute directive and a service for showing tooltips declaratively or programmatically",
     "author": "Nhuy Van",
     "license": "MIT",
@@ -13,10 +13,13 @@
         "angular tooltip"
     ],
     "peerDependencies": {
-        "@angular/common": "^12.2.0",
-        "@angular/core": "^12.2.0"
+        "@angular/common": "^13.2.0",
+        "@angular/core": "^13.2.0"
     },
     "dependencies": {
-        "tslib": "^2.3.0"
+        "tslib": "^2.3.1"
+    },
+    "devDependencies": {
+        "lint-staged": "^12.3.5"
     }
 }

@@ -32,7 +32,7 @@ describe('TooltipComponent', () => {
     fixture.detectChanges();
     component.show(document.createElement('div'));
     tick(200);
-    expect(fixture.debugElement.children[0].classes.bottom).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['bottom']).toBeTrue();
   }));
 
   it('3. should have "enter" in class attribute', fakeAsync(() => {
@@ -44,7 +44,7 @@ describe('TooltipComponent', () => {
     component.show(anchor);
     fixture.detectChanges();
     tick(200);
-    expect(fixture.debugElement.children[0].classes.enter).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['enter']).toBeTrue();
   }));
 
   it('4. should be placed on the left when placement is "left"', fakeAsync(() => {
@@ -58,7 +58,7 @@ describe('TooltipComponent', () => {
     component.show(anchor);
     fixture.detectChanges();
     tick(200);
-    expect(fixture.debugElement.children[0].classes.left).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['left']).toBeTrue();
   }));
 
   it('5. should be placed on the right when it overflows the left edge of viewport', fakeAsync(() => {
@@ -70,8 +70,8 @@ describe('TooltipComponent', () => {
     document.body.appendChild(anchor);
     component.show(anchor);
     tick(200);
-    expect(fixture.debugElement.children[0].classes.left).toBeUndefined();
-    expect(fixture.debugElement.children[0].classes.right).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['left']).toBeUndefined();
+    expect(fixture.debugElement.children[0].classes['right']).toBeTrue();
   }));
 
   it('6. should be placed on the left when it overflows the right edge of viewport', fakeAsync(() => {
@@ -83,8 +83,8 @@ describe('TooltipComponent', () => {
     document.body.appendChild(anchor);
     component.show(anchor);
     tick(200);
-    expect(fixture.debugElement.children[0].classes.right).toBeUndefined();
-    expect(fixture.debugElement.children[0].classes.left).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['right']).toBeUndefined();
+    expect(fixture.debugElement.children[0].classes['left']).toBeTrue();
   }));
 
   it('7. should be placed at the bottom when it overflows the top edge of viewport', fakeAsync(() => {
@@ -96,8 +96,8 @@ describe('TooltipComponent', () => {
     document.body.appendChild(anchor);
     component.show(anchor);
     tick(200);
-    expect(fixture.debugElement.children[0].classes.top).toBeUndefined();
-    expect(fixture.debugElement.children[0].classes.bottom).toBeTrue;
+    expect(fixture.debugElement.children[0].classes['top']).toBeUndefined();
+    expect(fixture.debugElement.children[0].classes['bottom']).toBeTrue;
   }));
 
   it('8. should be placed at the top when it overflows the bottom edge of viewport', fakeAsync(() => {
@@ -109,8 +109,8 @@ describe('TooltipComponent', () => {
     document.body.appendChild(anchor);
     component.show(anchor);
     tick(200);
-    expect(fixture.debugElement.children[0].classes.bottom).toBeUndefined();
-    expect(fixture.debugElement.children[0].classes.top).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['bottom']).toBeUndefined();
+    expect(fixture.debugElement.children[0].classes['top']).toBeTrue();
   }));
 
   it('9. should hide tooltip', fakeAsync(() => {
@@ -124,7 +124,7 @@ describe('TooltipComponent', () => {
     tick(200);
     component.hide();
     tick(200);
-    expect(fixture.debugElement.children[0].classes.leave).toBeTrue();
+    expect(fixture.debugElement.children[0].classes['leave']).toBeTrue();
   }));
 
 });

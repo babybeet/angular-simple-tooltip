@@ -2,6 +2,7 @@
 |This library       |Angular      |
 |-------------------|-------------|
 |1.0.0              |^12          |
+|2.0.0              |<=13.2.0      |
 
 <br/>
 
@@ -79,7 +80,7 @@ export class YourComponent {
 
 <br/>
 
-The tooltip also repositions itself to the top if it overflows the bottom edge of the viewport in case `kunTooltipPlacement` is `bottom`, similar behaviour also applies for the other placement values
+The tooltip also repositions itself to the top if it overflows the bottom edge of the viewport in case `kunTooltipPlacement` is `bottom`, similar behavior also applies for the other placement values
 ![Example 2](docs/images/example-2.gif)
 
 <br/>
@@ -95,7 +96,7 @@ On mobile devices, the user can activate the tooltip by long-pressing the trigge
 <br/>
 
 # Using `TooltipService`
-This package also exports a service called `TooltipService` that allows you to show tooltips programatically.
+This package also exports a service called `TooltipService` that allows you to show tooltips programmatically.
 
 ## Available APIs
 ```typescript
@@ -161,4 +162,4 @@ export class YourComponent {
 }
 ```
 
-The above example is very contrived, a better use case would be for when you need to manually create many `<circle>` and `<path>` SVG elements to render a network of some sort, and you need to display details about each node or edge when you hover over them, in this case, you can use `TooltipService` APIs to programatically show/hide tooltips on mouseover/mouseout.
+The above example is very contrived, a better use case would be for when you need to manually create many `<circle>` and `<path>` SVG elements to render a network of some sort, and you need to display details about each node or edge when you hover over them, in this case, you can use `TooltipService` APIs to programmatically show/hide tooltips on mouseover/mouseout.
